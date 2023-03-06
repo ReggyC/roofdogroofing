@@ -1,17 +1,8 @@
-/* COLOR SCHEMES
-Dark Blue: #3f4f5e
-Light Blue: #518abd
-Dark Orange: rgb(189, 126, 8)
-Light Orange: rgb(252, 213, 140)
-
-- Black on White, Red Accents
-Black:    #f8b195;
-White:     #f67280;
-Red: #c06c84;
-
-- Space Grey and Black
-Grey:   #f67280;
-White:  #f67280;
+/* COLOR SCHEME
+Orange:     #fd7f20
+Amber:      #fdb750
+Red Orange: #fc2e20
+Black:      #010100
 */
 
 /* ***** Global Body Settings ***** */
@@ -34,10 +25,10 @@ body{
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
-    align-items:center;
 }
 .row.center{ justify-content:center; }
 .row.sa{ justify-content:space-around; }
+.row.vertcenter{ align-items:center; }
 
 /* ---------------------- */
 /* Columns */
@@ -123,11 +114,11 @@ body{
     padding: 5px 18px;
     font-size:20px;
     font-weight:bolder;
-    text-shadow:2px 2px 3px black;
-    background-color: #518abd;
-    border: 1px solid rgb(150, 176, 187);
+    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.726);
+    background-color: #fd7f20;
+    border: 1px solid #fdb750;
     border-radius: 8px;
-    width:150px;
+    width:200px;
     margin:15px auto;
 }
 .bar-button{padding: auto 15px;height:100%}
@@ -135,73 +126,68 @@ body{
 .dropdown-button{width: auto;margin: auto;padding: 15px 8px;}
 
 /* Button Hover/State Effects */
-.button:hover{cursor:pointer;background-color:rgb(161,161,161);border: 1px solid #7a7a7a;}
+.button:hover{cursor:pointer;background-color:#fc2e20;border: 1px solid #fd7f20;}
 .bar-button:hover{cursor:pointer;background-color:#518abd;}
 .dropdown-button:hover{cursor:pointer;background-color:#518abd;}
 
 
-/* *****************      Font Settings    ***************** */
-/* ********************************************************* */
+/* *** Font Settings    *** */
 h2,h3,h4,h5,h6,a{
     color:white;
     text-align:center;
     text-shadow: 1px 1px 4px #000000;
 }
-h1{color:white;font-size:3.2rem;text-shadow:1px 1px 4px black}
+h1{color:white;font-size:3.2rem;text-shadow:1px 1px 4px black;}
 h2{font-size:2.5rem;}
 h3{font-size:1.8rem;}
 h4{font-size:1.5rem;}
 
-/* Container Box Shadow */
-.banner,.featured,footer{
-    box-shadow: 2px 2px 8px rgb(0, 0, 0);
+/* Standard Box Shadow */
+nav,footer{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.548);
 }
 
-.about-main{box-shadow:none;padding:15px;}
-.about-main h2{}
-.contact h3{}
-.contact-info a{text-shadow:none;}
-.contact-info a:hover{color:rgb(119, 119, 119);}
-
-
-/* *****************      Header       *********************** */
-/* ********************************************************* */
 /* ***  Navbar  *** */
 nav{
     height: 50px;
-    background-color: #000000;
+    background-color: #fdb750;
     align-content:center;
     color:rgb(255, 255, 255);
     z-index:1;
 }
 .nav-brand{
-    font-size:1.2rem;
+    font-size:1.3rem;letter-spacing:0.06rem;
 }
 .navbar, .nav-menu, .nav-menu-options{ height:100%; }
 nav a{
     padding: 0px 15px 0px 15px;
+    font-weight:bold;
+    letter-spacing:0.06rem;
 }
 .nav-menu a{
     padding: 12px 18px 12px 18px;
 }
 nav a:hover{
-    color:rgb(161, 161, 161);
+    color:#010100;
 }
 .nav-menu, .browse-menu{
     position: relative;
 }
 .nav-button{font-size:larger;}
+.nav-button.active{border-bottom: 4px solid #fd7f20;}
+.nav-button.accent a{color:#fc2e20;font-weight:bolder;letter-spacing:0.05rem;}
+.nav-button.accent a:hover{ color:white;text-shadow:1px 1px 3px #fd7f20; }
 
 /* *****************      Footer       ********************* */
 /* ********************************************************* */
 footer{
-    background-color:#000000;
+    background-color:#fdb750;
     text-align:center;
     border-radius: 5px 5px 0px 0px;
     padding:15px;
 }
 footer a:hover{
-    color:rgb(161,161,161);
+    color:#010100;
 }
 footer hr{ width: 50%; }
 .footer-left{padding-left:20%;}
@@ -210,39 +196,28 @@ footer hr{ width: 50%; }
 /* ********************************************************* */
 /* ***  Banner  *** */
 .banner{
-    height: 400px;
+    height: 370px;
     overflow:hidden;
     background: url('../images/roof.jpg') center / cover no-repeat;
     padding: 25px;
     border-radius: 0px 0px 5px 5px;
     z-index:0;
-    text-align:left;
 }
 .banner-tagline p{
     font-size:1.5rem;
-    color:rgb(161,161,161);
+    color:#fdb750;
     text-shadow: 2px 2px 3px #000000;
     font-weight:bold;
 }
-.banner-button{margin: 20px 25px;float:left;}
+.banner-button{margin: 20px auto 0px auto;}
 
-/* ***  Featured Section  *** */
-.featured{
-    margin: 40px auto;
-    background-color:#000000;
-    border: 1px solid rgb(70, 70, 70);
-    padding: 5px;
-    border-radius: 5px 5px 5px 5px;
-}
-#featured-items{align-items:flex-start;justify-content:space-around;}
-#featured-items a{ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.671) }
-#featured-items a:hover{ text-shadow: 2px 2px 5px rgb(0, 0, 0) }
-.newsletter{margin-bottom:25px;}
+/* About-Home */
+.about-home{margin:30px auto;}
+/* Estimate Form Section */
+.estimate h2{margin:20px auto;}
 
 
-/* ******************************************************** */
 /* ************       About Page       ******************* */
-/* ******************************************************** */
 .about h2,.contact h3{
     text-align:center;
 }
@@ -257,63 +232,13 @@ footer hr{ width: 50%; }
 .contact p{margin: 8px auto;}
 .contact-form label, .contact-form{margin: 8px auto;}
 .contact a{color:black;}
-.about,.contact{
-    padding: 5px;
-    border-radius: 5px 5px 5px 5px;
-}
+.about,.contact{padding: 5px;border-radius: 5px 5px 5px 5px;}
 
-/* ******************************************************** */
 /* ************       Gallery Page       ******************* */
-/* ******************************************************** */
-#instagram{
-    margin: 25px auto;
-    padding: 0px 20px;
-    align-items:flex-start;
-}
-#instagram div{
-    padding:5px;
-}
+#instagram{ margin: 25px auto;padding: 0px 20px;align-items:flex-start; }
+#instagram div{ padding:5px; }
 
-/* ************       Components       ******************* */
-/* ******************************************************** */
-.active{
-    border-bottom: 2px solid green;
-}
-
-/* Loading */
-.loading{margin: 0 auto;max-width:400px;display:none;}
-.true{display:block};
-.false{display:none};
-
-/* Dropdown */
-.dropdown {
-    position: relative;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #000000;
-    min-width: 160px;
-    height:auto;
-    box-shadow: 2px 2px 6px #000000;
-    z-index: 1;
-    top: 50px;
-    right: 0px;
-    align-content:center;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* MEDIA QUERY RESPONSIVE BREAKPOINTS */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    h1{line-height:1}
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
+/* *** Responsive Media Queries *** */
 /* Active on devices SMALLER than 768 */
 @media only screen and (max-width: 768px) {
     .nav-right-buttons{flex-direction:row-reverse;}
@@ -321,7 +246,7 @@ footer hr{ width: 50%; }
         display: block;
     }
     .nav-menu a:hover{
-        background-color:#56728a;
+        background-color:#fd7f20;
     }
     .browse-options{
         top:0;
@@ -330,16 +255,17 @@ footer hr{ width: 50%; }
     .nav-menu-options{
         display: none;
         position: absolute;
-        background-color: #000000;
+        background-color: #fdb750;
         min-width: 175px;
         height:auto;
-        box-shadow: 2px 2px 6px #000000;
         border-radius:5px;
         z-index: 1;
         top: 48px;
         right: 0px;
         align-content:center;
+
     }
+    .nav-button.active{border-bottom: none;}
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -363,8 +289,9 @@ footer hr{ width: 50%; }
         text-overflow:ellipsis;
         overflow:hidden;
     }
-    .banner-button{margin: 20px 150px;}
-    .banner-title,.banner-tagline{margin-left:35px}
+    .banner{height:350px;}
+    .banner-title{margin:20px auto}
+    .banner-button{margin: 30px auto;}
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
