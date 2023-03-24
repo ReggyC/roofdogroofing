@@ -1,8 +1,9 @@
 /* COLOR SCHEME
-Orange:     #fd7f20
+Orange:     #fca21e
 Amber:      #fdb750
-Red Orange: #fc2e20
+Red Orange: #fd6050
 Black:      #010100
+Blue:       #5096fd
 */
 
 /* ***** Global Body Settings ***** */
@@ -115,7 +116,7 @@ body{
     font-size:20px;
     font-weight:bolder;
     text-shadow:2px 2px 3px rgba(0, 0, 0, 0.726);
-    background-color: #fd7f20;
+    background-color: #fca21e;
     border: 1px solid #fdb750;
     border-radius: 8px;
     width:200px;
@@ -126,7 +127,7 @@ body{
 .dropdown-button{width: auto;margin: auto;padding: 15px 8px;}
 
 /* Button Hover/State Effects */
-.button:hover{cursor:pointer;background-color:#fc2e20;border: 1px solid #fd7f20;}
+.button:hover{cursor:pointer;background-color:#fd6050;border: 1px solid #fca21e;}
 .bar-button:hover{cursor:pointer;background-color:#518abd;}
 .dropdown-button:hover{cursor:pointer;background-color:#518abd;}
 
@@ -168,15 +169,15 @@ nav a{
     padding: 12px 18px 12px 18px;
 }
 nav a:hover{
-    color:#010100;
+    color:#5096fd;
 }
 .nav-menu, .browse-menu{
     position: relative;
 }
 .nav-button{font-size:larger;}
-.nav-button.active{border-bottom: 4px solid #fd7f20;}
-.nav-button.accent a{color:#fc2e20;font-weight:bolder;letter-spacing:0.05rem;}
-.nav-button.accent a:hover{ color:white;text-shadow:1px 1px 3px #fd7f20; }
+.nav-button.active{border-bottom: 4px solid #fca21e;}
+.nav-button.accent a{color:#fd6050;font-weight:bolder;letter-spacing:0.05rem;}
+.nav-button.accent a:hover{ color:white;text-shadow:1px 1px 3px #fca21e; }
 
 /* *****************      Footer       ********************* */
 /* ********************************************************* */
@@ -262,7 +263,7 @@ footer hr{ width: 50%; }
         display: block;
     }
     .nav-menu a:hover{
-        background-color:#fd7f20;
+        background-color:#fca21e;
     }
     .browse-options{
         top:0;
