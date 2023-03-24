@@ -217,6 +217,9 @@ footer hr{ width: 50%; }
     max-height: 300px;
     margin-top: 20px;
     padding: 15px 20px;
+    display:flex;
+    flex-wrap:nowrap;
+    background-color: #47474793;
 }
 .card-1 img{
     max-width:150px;
