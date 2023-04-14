@@ -237,6 +237,7 @@ footer hr{ width: 50%; }
     max-width: 700px;
     margin: 25px auto;
 }
+.about hr{color:#E57C04}
 .quote{font-style:italic;}
 .quote-marks{font-family:Georgia, 'Times New Roman', Times, serif;font-weight:bolder;font-size:larger;margin:0 5px;}
 
