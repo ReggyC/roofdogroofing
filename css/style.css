@@ -159,7 +159,7 @@ a{color:white;text-align:center;text-shadow: 1px 1px 3px black}
 
 /* ***  Navbar  *** */
 nav{
-    height: 50px;
+    height: 75px;
     background-color: #E57C04;
     align-content:center;
     color:rgb(255, 255, 255);
@@ -167,35 +167,25 @@ nav{
 .nav-brand{
     font-size:1.4rem;letter-spacing:0.06rem;
 }
-.nav-logo{max-height: 40px;}
+.nav-logo{max-height: 60px;}
 .nav-logo:hover{-webkit-filter: drop-shadow(2px 2px 3px #000000);filter: drop-shadow(2px 2px 3px #000000);}
 .navbar, .nav-menu, .nav-menu-options{ height:100%; }
-nav a{
-    padding: 0px 15px 0px 15px;
-    font-weight:bold;
-    letter-spacing:0.06rem;
-}
-.nav-menu a{
-    padding: 12px 18px 12px 18px;
-}
-nav a:hover{
-    color:#010100;
-    text-shadow:none;
-}
-nav a:active{color:#7C90A0}
+nav a{padding: 0px 15px 0px 15px;font-weight:bold;letter-spacing:0.06rem;}
+.nav-menu a{padding: 12px 18px 12px 18px;}
+nav a:hover{color:#010100;text-shadow:none;}
 .nav-menu, .browse-menu{position: relative;}
-.nav-button.active{ border-bottom: 6px solid black; }
+.nav-button{margin:auto;}
 
 
 /* *****************      Footer       ********************* */
-footer{ background-color:#E57C04;text-align:center;border-radius: 5px 5px 0px 0px;padding:15px;font-size:1.1rem; }
+footer{ background-color:#E57C04;text-align:center;border-radius: 5px 5px 0px 0px;padding:15px 15px 25px 15px;font-size:1.1rem; }
 footer a { margin: 5px auto; }
 footer a:hover{ color:#010100; }
 footer a:active{ color:#7C90A0; }
 footer hr{ width: 50%; }
 .footer-left{ padding-left:20%; }
 .footer-right{ padding-right:20%; }
-.footer-logo{margin:auto;}
+.footer-logo{margin: 0 auto 15px auto;max-width:300px;}
 .footer-logo:hover{-webkit-filter: drop-shadow(2px 2px 3px #000000);filter: drop-shadow(2px 2px 3px #000000);}
 
 
@@ -274,15 +264,15 @@ footer hr{ width: 50%; }
         right: 0px;
         align-content:center;
     }
-    .nav-button.active{border-bottom: none;}
+    .nav-menu-button{height:100%;padding:10px;}
+    .nav-menu-button a{height:100%;}
+    i{font-size:1.7rem}
 }
 /* Small devices - MIN 500 */
 @media only screen and (min-width: 500px) {
-    .banner{
-        height:260px;
-    }
-    .banner-title{margin:20px auto}
-    .banner-button{margin: 30px auto;}
+    .banner{height:350px;}
+    .banner-title{margin:30px auto}
+    .banner-button{margin: 50px auto;}
 }
 /* Medium devices - MIN 768 */
 @media only screen and (min-width: 768px) {
@@ -306,7 +296,6 @@ footer hr{ width: 50%; }
         text-overflow:ellipsis;
         overflow:hidden;
     }
-    .nav-button:hover{border-bottom: 6px solid black;}
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
