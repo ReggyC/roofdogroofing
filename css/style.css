@@ -1,8 +1,11 @@
 /* NEW COLORS */
 /* 
-Orange: #E57C04
-Accent: #fca21e
-Blue:   #7C90A0
+Orange:    #E57C04
+Accent:    #fca21e
+Blue:      #7C90A0
+logo-blue: #5b8ab5
+logo-orng: #f26122
+logo-mono: #d4490d
 */
 
 /* ***** Global Body Settings ***** */
@@ -128,8 +131,8 @@ body{
     font-size:20px;
     font-weight:bolder;
     text-shadow:2px 2px 3px rgba(0, 0, 0, 0.726);
-    background-color: #E57C04;
-    border: 1px solid #E57C04;
+    background-color: #f26122;
+    border: 1px solid #f26122;
     border-radius: 25px;
     width:200px;
     margin:15px auto;
@@ -147,11 +150,11 @@ body{
 
 /* *** Font Settings    *** */
 h2,h3,h4,h5,h6{
-    color:#E57C04;
+    color:#f26122;
     text-align:center;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.651);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.459);
 }
-h1{color:#E57C04;font-size:3.2rem;text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.651);}
+h1{color:#f26122;font-size:3.2rem;text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.459);}
 h2{font-size:2.5rem;}
 h3{font-size:1.8rem;}
 h4{font-size:1.5rem;}
@@ -160,7 +163,7 @@ a{color:white;text-align:center;text-shadow: 1px 1px 3px black}
 /* ***  Navbar  *** */
 nav{
     height: 75px;
-    background-color: #E57C04;
+    background-color: #f26122;
     align-content:center;
     color:rgb(255, 255, 255);
 }
@@ -178,7 +181,7 @@ nav a:hover{color:#010100;text-shadow:none;}
 
 
 /* *****************      Footer       ********************* */
-footer{ background-color:#E57C04;text-align:center;border-radius: 5px 5px 0px 0px;padding:15px 15px 25px 15px;font-size:1.1rem; }
+footer{ background-color:#f26122;text-align:center;border-radius: 5px 5px 0px 0px;padding:15px 15px 25px 15px;font-size:1.1rem; }
 footer a { margin: 5px auto; }
 footer a:hover{ color:#010100; }
 footer a:active{ color:#7C90A0; }
@@ -199,10 +202,10 @@ footer hr{ width: 50%; }
     padding: 10px 25px 25px 25px;
     border-radius: 0px 0px 5px 5px;
 }
-.banner-title h1{color:white;}
+.banner-title h1{color:white;text-shadow: 2px 2px 3px #000000;}
 .banner-tagline p{
     font-size:1.6rem;
-    color:#fdb750;
+    color:#d4490d;
     text-shadow: 2px 2px 3px #000000;
     font-weight:bold;
 }
@@ -225,7 +228,7 @@ footer hr{ width: 50%; }
     max-width: 700px;
     margin: 25px auto;
 }
-.about hr{color:#E57C04}
+.about hr{color:black}
 .quote{font-style:italic;font-size:larger;background-color:rgba(128, 128, 128, 0.301);border-radius:5px;padding:10px}
 .quote-marks{font-family:Georgia, 'Times New Roman', Times, serif;font-weight:bolder;font-size:larger;margin:0 5px;}
 
@@ -255,7 +258,7 @@ footer hr{ width: 50%; }
     .nav-menu-options{
         display: none;
         position: absolute;
-        background-color: #E57C04;
+        background-color: #f26122;
         min-width: 175px;
         height:auto;
         border-radius:5px;
