@@ -143,9 +143,6 @@ body{
 .bar-button{padding: auto 15px;height:100%}
 .bar-button:hover{cursor:pointer;background-color:#518abd;}
 .bar-button i{margin:auto 15px;}
-/* Dropdown Button */
-.dropdown-button{width: auto;margin: auto;padding: 15px 8px;}
-.dropdown-button:hover{cursor:pointer;background-color:#518abd;}
 
 
 /* *** Font Settings    *** */
@@ -253,7 +250,7 @@ footer hr{ width: 50%; }
         display: block;
     }
     .nav-menu a:hover{
-        background-color:#fca21e;
+        background-color:#d4490d;
     }
     .nav-menu-options{
         display: none;
